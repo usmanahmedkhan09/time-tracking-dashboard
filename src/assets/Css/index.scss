@@ -100,9 +100,9 @@ body {
         li {
           margin: 12px 0px;
           font-size: 1.8rem;
-        }
-        li:hover {
-          color: white;
+          &:hover, &.active {
+            color: white;
+          }
         }
       }
 

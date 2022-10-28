@@ -12,7 +12,12 @@
       </div>
       <div class="filter">
         <ul>
-          <li v-for="(filter, index) in filters" :key="index">
+          <li
+            v-for="(filter, index) in filters"
+            :key="index"
+            @click="handleTimeFilter(filter.value)"
+            :class="filter.value == selectedTime ? 'active' : ''"
+          >
             {{ filter.name }}
           </li>
         </ul>
@@ -119,20 +124,23 @@ export default defineComponent({
   setup() {
     let data = ref<any>(userjson);
 
-    const selectedTime = ref("monthly");
+    const selectedTime = ref("daily");
 
     const filters = ref([
       { name: "Daily", value: "daily" },
-      { name: "Month", value: "month" },
+      { name: "Month", value: "monthly" },
       { name: "Weekly", value: "weekly" },
     ]);
 
-    onMounted(() => {});
+    const handleTimeFilter = (val: string) => {
+      selectedTime.value = val;
+    };
 
     return {
       data,
       filters,
       selectedTime,
+      handleTimeFilter,
     };
   },
 });
