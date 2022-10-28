@@ -39,7 +39,8 @@
         <div class="content--body" v-if="selectedTime">
           <h1>{{ item.timeframes[`${selectedTime}`]?.current }}hrs</h1>
           <p>
-            Last-Week - {{ item.timeframes[`${selectedTime}`]?.previous }}hrs
+            Last {{ item.title }} -
+            {{ item.timeframes[`${selectedTime}`]?.previous }}hrs
           </p>
         </div>
       </div>
@@ -53,7 +54,8 @@
         <div class="content--body">
           <h1>{{ item.timeframes[`${selectedTime}`].current }}hrs</h1>
           <p>
-            Last-Week - {{ item.timeframes[`${selectedTime}`].previous }}hrs
+            Last {{ item.title }} -
+            {{ item.timeframes[`${selectedTime}`].previous }}hrs
           </p>
         </div>
       </div>
@@ -67,7 +69,8 @@
         <div class="content--body">
           <h1>{{ item.timeframes[`${selectedTime}`].current }}hrs</h1>
           <p>
-            Last-Week - {{ item.timeframes[`${selectedTime}`].previous }}hrs
+            Last {{ item.title }} -
+            {{ item.timeframes[`${selectedTime}`].previous }}hrs
           </p>
         </div>
       </div>
@@ -81,7 +84,8 @@
         <div class="content--body">
           <h1>{{ item.timeframes[`${selectedTime}`].current }}hrs</h1>
           <p>
-            Last-Week - {{ item.timeframes[`${selectedTime}`].previous }}hrs
+            Last {{ item.title }} -
+            {{ item.timeframes[`${selectedTime}`].previous }}hrs
           </p>
         </div>
       </div>
@@ -95,7 +99,8 @@
         <div class="content--body">
           <h1>{{ item.timeframes[`${selectedTime}`].current }}hrs</h1>
           <p>
-            Last-Week - {{ item.timeframes[`${selectedTime}`].previous }}hrs
+            Last {{ item.title }} -
+            {{ item.timeframes[`${selectedTime}`].previous }}hrs
           </p>
         </div>
       </div>
@@ -109,7 +114,8 @@
         <div class="content--body">
           <h1>{{ item.timeframes[`${selectedTime}`].current }}hrs</h1>
           <p>
-            Last-Week - {{ item.timeframes[`${selectedTime}`].previous }}hrs
+            Last {{ item.title }} -
+            {{ item.timeframes[`${selectedTime}`].previous }}hrs
           </p>
         </div>
       </div>
@@ -128,8 +134,8 @@ export default defineComponent({
 
     const filters = ref([
       { name: "Daily", value: "daily" },
-      { name: "Month", value: "monthly" },
       { name: "Weekly", value: "weekly" },
+      { name: "Monthly", value: "monthly" },
     ]);
 
     const handleTimeFilter = (val: string) => {
