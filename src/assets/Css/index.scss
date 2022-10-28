@@ -218,8 +218,29 @@ body {
     "exercise"
     "selfcare";
 
+
+    .card {
+
+      .content {
+        height: 70%;
+  
+        &--body{
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          h1 {
+            font-size: 2.6rem;
+          }
+          p {
+            align-items: center;
+          }
+
+        }
+      }
+    }
   } 
 
+ 
   :root{
     #app {
       height: unset;
