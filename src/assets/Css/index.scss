@@ -57,14 +57,14 @@ body {
     
 
     .intro {
-      height: 70%;  
       background-color: $blue;
-      padding: 50px 32px;
+      padding: 30px 24px;
       border-radius: inherit;
+      height: inherit;
 
       .image_wrapper {
-        height: 150px;
-        width: 150px;
+        height: 80px;
+        width: 80px;
   
         img {
           height: 100%;
@@ -76,12 +76,12 @@ body {
 
     .filter {
       font-size: 1.6rem !important;
-      padding: 5rem 3.2rem;
+      // padding: 5rem 3.2rem;
 
       ul {
         list-style-type: none;
         color:  hsl(235, 45%, 61%);
-        li:not(:first-child) {
+        li {
           margin: 16px 0px;
           font-size: 1.8rem;
         }
