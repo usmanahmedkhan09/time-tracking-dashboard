@@ -31,6 +31,9 @@
             <img src="../assets/images/icon-ellipsis.svg" alt="icon" />
           </div>
         </div>
+        <div class="content--body">
+          <h1>{{ item.timeframes.weekly.current }}hrs</h1>
+        </div>
       </div>
       <div v-if="item.title == 'Play'" class="content">
         <div class="content--header">
@@ -38,6 +41,9 @@
           <div>
             <img src="../assets/images/icon-ellipsis.svg" alt="icon" />
           </div>
+        </div>
+        <div class="content--body">
+          <h1>{{ item.timeframes.weekly.current }}hrs</h1>
         </div>
       </div>
       <div v-if="item.title == 'Study'" class="content">
@@ -47,6 +53,9 @@
             <img src="../assets/images/icon-ellipsis.svg" alt="icon" />
           </div>
         </div>
+        <div class="content--body">
+          <h1>{{ item.timeframes.weekly.current }}hrs</h1>
+        </div>
       </div>
       <div v-if="item.title == 'Exercise'" class="content">
         <div class="content--header">
@@ -54,6 +63,9 @@
           <div>
             <img src="../assets/images/icon-ellipsis.svg" alt="icon" />
           </div>
+        </div>
+        <div class="content--body">
+          <h1>{{ item.timeframes.weekly.current }}hrs</h1>
         </div>
       </div>
       <div v-if="item.title == 'Social'" class="content">
@@ -63,6 +75,9 @@
             <img src="../assets/images/icon-ellipsis.svg" alt="icon" />
           </div>
         </div>
+        <div class="content--body">
+          <h1>{{ item.timeframes.weekly.current }}hrs</h1>
+        </div>
       </div>
       <div v-if="item.title == 'Self Care'" class="content">
         <div class="content--header">
@@ -70,6 +85,9 @@
           <div>
             <img src="../assets/images/icon-ellipsis.svg" alt="icon" />
           </div>
+        </div>
+        <div class="content--body">
+          <h1>{{ item.timeframes.weekly.current }}hrs</h1>
         </div>
       </div>
     </div>

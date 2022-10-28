@@ -65,7 +65,7 @@ body {
       .image_wrapper {
         height: 80px;
         width: 80px;
-        border : 2px solid white;
+        border : 4px solid white;
         border-radius: 50%;
   
         img {
@@ -180,6 +180,13 @@ body {
         display: flex;
         justify-content: space-between;
         align-items: center;
+      }
+
+      &--body{
+        h1 {
+          font-size: 5.2rem;
+          font-weight: 100;
+        }
       }
     }
   }
