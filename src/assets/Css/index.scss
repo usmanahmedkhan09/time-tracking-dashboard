@@ -111,51 +111,44 @@ body {
   }
 
   .work{
-    // @include flex-end();
+    @include background();
     grid-area: work;
     background-image: url('../images/icon-work.svg');
-    background-repeat: no-repeat;
-    background-position-x: right;
     background-color: $light-red;
   }
 
   .play{
+    @include background();
     grid-area: play;
     background-image: url('../images/icon-play.svg');
-    background-repeat: no-repeat;
-    background-position-x: right;
     background-color: $soft-blue ;
   }
 
   .study{
+    @include background();
     grid-area: study;
     background-image: url('../images/icon-study.svg');
-    background-repeat: no-repeat;
-    background-position-x: right;
     background-color: $light-rd ;
   }
 
   .exercise{
+    @include background();
     grid-area: exercise;
     background-image: url('../images/icon-exercise.svg');
-    background-repeat: no-repeat;
-    background-position-x: right;
     background-color: $lime-green;
   }
 
   .social{
+    @include background();
     grid-area: social;
     background-image: url('../images/icon-social.svg');
-    background-repeat: no-repeat;
-    background-position-x: right;
     background-color: $violet;
   }
 
   .selfcare{
+    @include background();
     grid-area: selfcare;
      background-image: url('../images/icon-self-care.svg');
-    background-repeat: no-repeat;
-    background-position-x: right;
     background-color: $soft-orange;
   }
 
@@ -174,7 +167,7 @@ body {
       border-radius: 18px;
       background-color: hsl(235, 46%, 20%);
       z-index: 1;
-      padding: 32px;
+      padding: 24px;
 
       &--header{
         display: flex;
@@ -186,6 +179,11 @@ body {
         h1 {
           font-size: 5.2rem;
           font-weight: 100;
+        }
+        p{
+          font-size: 1.4rem;
+          font-weight: 100;
+          color: hsl(236, 100%, 87%);
         }
       }
     }

@@ -2,3 +2,10 @@
     display: flex;
     align-items: flex-end;
 }
+
+@mixin background {
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-size: 80px;
+    background-position: 166px -5px;
+}

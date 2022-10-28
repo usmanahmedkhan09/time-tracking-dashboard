@@ -33,6 +33,7 @@
         </div>
         <div class="content--body">
           <h1>{{ item.timeframes.weekly.current }}hrs</h1>
+          <p>Last-Week - {{ item.timeframes.weekly.previous }}hrs</p>
         </div>
       </div>
       <div v-if="item.title == 'Play'" class="content">
@@ -44,6 +45,7 @@
         </div>
         <div class="content--body">
           <h1>{{ item.timeframes.weekly.current }}hrs</h1>
+          <p>Last-Week - {{ item.timeframes.weekly.previous }}hrs</p>
         </div>
       </div>
       <div v-if="item.title == 'Study'" class="content">
@@ -55,6 +57,7 @@
         </div>
         <div class="content--body">
           <h1>{{ item.timeframes.weekly.current }}hrs</h1>
+          <p>Last-Week - {{ item.timeframes.weekly.previous }}hrs</p>
         </div>
       </div>
       <div v-if="item.title == 'Exercise'" class="content">
@@ -66,6 +69,7 @@
         </div>
         <div class="content--body">
           <h1>{{ item.timeframes.weekly.current }}hrs</h1>
+          <p>Last-Week - {{ item.timeframes.weekly.previous }}hrs</p>
         </div>
       </div>
       <div v-if="item.title == 'Social'" class="content">
@@ -77,6 +81,7 @@
         </div>
         <div class="content--body">
           <h1>{{ item.timeframes.weekly.current }}hrs</h1>
+          <p>Last-Week - {{ item.timeframes.weekly.previous }}hrs</p>
         </div>
       </div>
       <div v-if="item.title == 'Self Care'" class="content">
@@ -88,6 +93,7 @@
         </div>
         <div class="content--body">
           <h1>{{ item.timeframes.weekly.current }}hrs</h1>
+          <p>Last-Week - {{ item.timeframes.weekly.previous }}hrs</p>
         </div>
       </div>
     </div>
