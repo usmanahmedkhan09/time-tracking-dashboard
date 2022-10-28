@@ -65,11 +65,26 @@ body {
       .image_wrapper {
         height: 80px;
         width: 80px;
+        border : 2px solid white;
+        border-radius: 50%;
   
         img {
           height: 100%;
           width: 100%;
           object-fit: cover;
+        }
+      }
+
+      &--content{
+        margin-top: 32px;
+        p {
+          font-size: 1.4rem;
+          color: hsl(235, 45%, 61%);
+          font-weight: 500;
+        }
+        h1 {
+          line-height: initial;
+          font-weight: 300;
         }
       }
     }
@@ -81,8 +96,9 @@ body {
       ul {
         list-style-type: none;
         color:  hsl(235, 45%, 61%);
+        padding: 0px 24px;
         li {
-          margin: 16px 0px;
+          margin: 12px 0px;
           font-size: 1.8rem;
         }
         li:hover {

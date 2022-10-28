@@ -5,6 +5,10 @@
         <div class="image_wrapper">
           <img src="../assets/images/image-jeremy.png" />
         </div>
+        <div class="intro--content">
+          <p>Report for</p>
+          <h1>Jermey Robson</h1>
+        </div>
       </div>
       <div class="filter">
         <ul>
