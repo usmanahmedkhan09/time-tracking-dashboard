@@ -25,22 +25,52 @@
       class="card"
     >
       <div v-if="item.title == 'Work'" class="content">
-        {{ item.title }}
+        <div class="content--header">
+          {{ item.title }}
+          <div>
+            <img src="../assets/images/icon-ellipsis.svg" alt="icon" />
+          </div>
+        </div>
       </div>
       <div v-if="item.title == 'Play'" class="content">
-        {{ item.title }}
+        <div class="content--header">
+          {{ item.title }}
+          <div>
+            <img src="../assets/images/icon-ellipsis.svg" alt="icon" />
+          </div>
+        </div>
       </div>
       <div v-if="item.title == 'Study'" class="content">
-        {{ item.title }}
+        <div class="content--header">
+          {{ item.title }}
+          <div>
+            <img src="../assets/images/icon-ellipsis.svg" alt="icon" />
+          </div>
+        </div>
       </div>
       <div v-if="item.title == 'Exercise'" class="content">
-        {{ item.title }}
+        <div class="content--header">
+          {{ item.title }}
+          <div>
+            <img src="../assets/images/icon-ellipsis.svg" alt="icon" />
+          </div>
+        </div>
       </div>
       <div v-if="item.title == 'Social'" class="content">
-        {{ item.title }}
+        <div class="content--header">
+          {{ item.title }}
+          <div>
+            <img src="../assets/images/icon-ellipsis.svg" alt="icon" />
+          </div>
+        </div>
       </div>
       <div v-if="item.title == 'Self Care'" class="content">
-        {{ item.title }}
+        <div class="content--header">
+          {{ item.title }}
+          <div>
+            <img src="../assets/images/icon-ellipsis.svg" alt="icon" />
+          </div>
+        </div>
       </div>
     </div>
   </div>
