@@ -31,9 +31,11 @@
             <img src="../assets/images/icon-ellipsis.svg" alt="icon" />
           </div>
         </div>
-        <div class="content--body">
-          <h1>{{ item.timeframes.weekly.current }}hrs</h1>
-          <p>Last-Week - {{ item.timeframes.weekly.previous }}hrs</p>
+        <div class="content--body" v-if="selectedTime">
+          <h1>{{ item.timeframes[`${selectedTime}`]?.current }}hrs</h1>
+          <p>
+            Last-Week - {{ item.timeframes[`${selectedTime}`]?.previous }}hrs
+          </p>
         </div>
       </div>
       <div v-if="item.title == 'Play'" class="content">
@@ -44,8 +46,10 @@
           </div>
         </div>
         <div class="content--body">
-          <h1>{{ item.timeframes.weekly.current }}hrs</h1>
-          <p>Last-Week - {{ item.timeframes.weekly.previous }}hrs</p>
+          <h1>{{ item.timeframes[`${selectedTime}`].current }}hrs</h1>
+          <p>
+            Last-Week - {{ item.timeframes[`${selectedTime}`].previous }}hrs
+          </p>
         </div>
       </div>
       <div v-if="item.title == 'Study'" class="content">
@@ -56,8 +60,10 @@
           </div>
         </div>
         <div class="content--body">
-          <h1>{{ item.timeframes.weekly.current }}hrs</h1>
-          <p>Last-Week - {{ item.timeframes.weekly.previous }}hrs</p>
+          <h1>{{ item.timeframes[`${selectedTime}`].current }}hrs</h1>
+          <p>
+            Last-Week - {{ item.timeframes[`${selectedTime}`].previous }}hrs
+          </p>
         </div>
       </div>
       <div v-if="item.title == 'Exercise'" class="content">
@@ -68,8 +74,10 @@
           </div>
         </div>
         <div class="content--body">
-          <h1>{{ item.timeframes.weekly.current }}hrs</h1>
-          <p>Last-Week - {{ item.timeframes.weekly.previous }}hrs</p>
+          <h1>{{ item.timeframes[`${selectedTime}`].current }}hrs</h1>
+          <p>
+            Last-Week - {{ item.timeframes[`${selectedTime}`].previous }}hrs
+          </p>
         </div>
       </div>
       <div v-if="item.title == 'Social'" class="content">
@@ -80,8 +88,10 @@
           </div>
         </div>
         <div class="content--body">
-          <h1>{{ item.timeframes.weekly.current }}hrs</h1>
-          <p>Last-Week - {{ item.timeframes.weekly.previous }}hrs</p>
+          <h1>{{ item.timeframes[`${selectedTime}`].current }}hrs</h1>
+          <p>
+            Last-Week - {{ item.timeframes[`${selectedTime}`].previous }}hrs
+          </p>
         </div>
       </div>
       <div v-if="item.title == 'Self Care'" class="content">
@@ -92,29 +102,37 @@
           </div>
         </div>
         <div class="content--body">
-          <h1>{{ item.timeframes.weekly.current }}hrs</h1>
-          <p>Last-Week - {{ item.timeframes.weekly.previous }}hrs</p>
+          <h1>{{ item.timeframes[`${selectedTime}`].current }}hrs</h1>
+          <p>
+            Last-Week - {{ item.timeframes[`${selectedTime}`].previous }}hrs
+          </p>
         </div>
       </div>
     </div>
   </div>
 </template>
 <script lang="ts">
-import { defineComponent, ref } from "vue";
+import { defineComponent, ref, onMounted } from "vue";
 import userjson from "@/assets/data.json";
 
 export default defineComponent({
   setup() {
     let data = ref<any>(userjson);
+
+    const selectedTime = ref("monthly");
+
     const filters = ref([
       { name: "Daily", value: "daily" },
       { name: "Month", value: "month" },
       { name: "Weekly", value: "weekly" },
     ]);
 
+    onMounted(() => {});
+
     return {
       data,
       filters,
+      selectedTime,
     };
   },
 });
