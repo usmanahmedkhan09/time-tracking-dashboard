@@ -3,7 +3,7 @@
     <div class="card profile">
       <div class="intro">
         <div class="image_wrapper">
-          <img src="../assets/images/image-jeremy.png" />
+          <img src="../assets/images/image-jeremy.png" alt="user" />
         </div>
         <div class="intro--content">
           <p>Report for</p>
