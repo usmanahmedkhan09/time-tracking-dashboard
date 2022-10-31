@@ -227,7 +227,9 @@ body {
     .card {
 
       .content {
-        height: 70%;
+        height: 75%;
+        min-height: unset;
+        padding: 16px 24px;
   
         &--body{
           display: flex;
